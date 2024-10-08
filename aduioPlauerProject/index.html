@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="container" class="animate__animated animate__fadeIn">
+        <div id="player" class="animate__animated animate__zoomIn animate__faster">
+            <div id="upload-container">
+                <img src="images/bg.png" width="100%" id="bg" />
+                <input type="file" accept="audio/*" id="upload-input" />
+            </div>
+            <div id="content">
+                <marquee>
+                    <h1 id="title">Introduction to HTML</h1>
+                </marquee>
+                <p id="size">Size : 00.0 Mb</p>
+                <div id="progress-info">
+                    <span id="current-duration">00:00</span>
+                    <div id="progress">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <button id="mute-btn" class="toolbar">
+                        <i class="ri-volume-up-line" id="mute-icon"></i>
+                    </button>
+                    <span id="full-duration">00:00</span>
+                </div>
+                <div id="controls">
+                    <button id="volume-btn" class="toolbar">
+                        <div id="volume-box">
+                            <input type="range" step="0.1" id="volume" min="0" max="1" />
+                        </div>
+                        <i class="ri-volume-up-line"></i>
+                    </button>
+                    <button id="backward-btn" class="toolbar">
+                        <i class="ri-arrow-left-s-fill"></i>
+                    </button>
+                    <button id="play-btn" class="toolbar">
+                        <i class="ri-play-fill" id="play-icon"></i>
+                    </button>
+                    <button id="forward-btn" class="toolbar">
+                        <i class="ri-arrow-right-s-fill"></i>
+                    </button>
+                    <button id="loop-btn"class="toolbar">
+                        <i class="ri-repeat-2-line" id="loop-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
